@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('.sharetastic').sharetastic();
 
     $('form').submit(function () {
         let errors = false;
@@ -43,14 +42,9 @@ $(document).ready(function() {
             let d = new Date();
             alert('Uspesno popunjena forma dana  ' + (d.toLocaleString('en-AU'
             )));
-            return true;
         }
         
     });
-    
-
-
-
 
 
 });
