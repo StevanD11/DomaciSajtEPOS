@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="contact-body">
+
+    <header>
+        <div class="logo">
+            <a href="index.html" <h1 class="logo">Smart Start</h1></a>
+
+        </div>
+        <nav>
+            <ul class="meni">
+                <li><a class="meni_item" href="index.html">Početna</a></li>
+                <li><a class="meni_item" href="about.html">O nama</a></li>
+                <li><a class="meni_item" href="references.html">Reference</a></li>
+                <li><a class="meni_item" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="forma">
+        <h3>Ukoliko imate neko pitanje možete nas kontaktirati putem forme</h3>
+        <form class="forma" action="#">
+
+            <input type="text" name="ime" id="ime" placeholder="Ime">
+            <p id="greskaIme"></p>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <p id="greskaEmail"></p>
+            <input type="text" name="naslov" id="naslov" placeholder="Naslov poruke">
+            <textarea name="poruka" id="poruka" placeholder="Tekst poruke"></textarea>
+            <label for="pol-select">Pol:</label>
+            <select name="pol" id="pol-select">
+                <option value="muski">Muski</option>
+                <option value="zenski">Zenski</option>
+            </select><br>
+            <label>Da li ste vi robot?</label> <br>
+            <input type="radio" name="robot" value="da">
+            <label for="robot">Da</label>
+            <input type="radio" name="robot" value="ne">
+            <label for="robot">Ne</label><br>
+            <label for=""></label>
+            <input type="submit" value="Posalji" id="btn">
+            <p class="errors"></p>
+        </form>
+    </div>
+
+    <footer>
+        <p>Smart Start - Copyright&copy;2020</p>
+    </footer>
+</body>
+
+</html>
+<script src="js/myjs.js"></script>
+</body>
+
+</html>

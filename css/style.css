@@ -1,0 +1,423 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: #e6f9ff;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    background-color: green;
+}
+
+a:hover {
+    color: #ff8566;
+}
+
+h3 {
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.logo,
+.meni {
+    display: flex;
+}
+
+.logo {
+    margin: 5px;
+    flex: 1;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+nav {
+    flex: 2;
+}
+
+hr {
+    border-top: 8px solid green;
+}
+
+.meni {
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px;
+}
+
+.meni_item {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+#ref {
+    height: 900px;
+}
+
+.nove_reference {
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+}
+
+#reference_naslov {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    font-weight: 500;
+}
+
+.referenca img {
+    width: 380px;
+    height: 200px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.referenca h4 {
+    color: #ff8566;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+#o_nama {
+    padding-top: 15px;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.partner {
+    padding-left: 60px;
+    padding-top: 90px;
+    flex: 1;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.o_nama_tekst {
+    flex: 2;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 80px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#sekcija_sredina {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.zasto_mi_naslov {
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.zasto_mi {
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tekst {
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: space-evenly;
+}
+
+
+.novosti_naslov {
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.novost img {
+    width: 300px;
+    height: 200px;
+}
+
+.novosti {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 120px;
+}
+
+footer {
+    color: white;
+    background-color: green;
+    text-align: center;
+    height: 25px;
+    width: 90%;
+    margin: auto;
+}
+
+
+#forma {
+    padding-top: 45px;
+    width: 90%;
+    margin: auto;
+    height: 830px;
+    background-color: #e6ffff;
+}
+
+#forma h3 {
+    padding-left: 40px;
+}
+
+.forma {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.forma input[type='text'],
+.forma input[type='email'],
+.forma textarea {
+    display: block;
+    width: 40%;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.forma input[type='text'],
+.forma input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid gray;
+    width: 40%;
+    padding: 9px;
+    margin-bottom: 20px;
+}
+
+.forma input[type='radio'] {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+
+.forma textarea {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.forma select {
+    margin-top: 10px;
+    padding: 7px;
+    width: 110px;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.forma label {
+    font-size: 18px;
+}
+
+#btn {
+    margin-top: 12px;
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: blue;
+}
+
+.errors {
+    margin-top: 50px;
+    font-size: 25px;
+    color: red;
+}
+
+.about-tekst {
+    background-color: #e6f9ff;
+    width: 90%;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .meni {
+        display: block;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    .meni li {
+        padding: 0;
+    }
+
+    #o_nama {
+        flex-direction: column;
+    }
+
+    .tekst {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zasto_mi {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .zasto_mi_naslov {
+        margin-top: 25px;
+        padding-right: 50px;
+    }
+
+    .novosti {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .novost {
+        padding-top: 40px;
+        margin: auto;
+    }
+
+    #ref {
+        height: auto;
+    }
+
+    .nove_reference {
+        margin-bottom: 5px;
+    }
+
+    .forma input[type='text'],
+    .forma input[type='email'],
+    .forma textarea {
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header,
+    .meni,
+    #o_nama,
+    .tekst,
+    .novosti {
+        flex-direction: column;
+    }
+
+    .meni {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .meni li {
+        padding: 10px;
+    }
+
+    .meni_item {
+        font-size: 25px;
+    }
+
+
+    .tekst {
+        align-items: center;
+    }
+
+    .o_nama_tekst {
+        padding-top: 40px;
+        padding-right: 90px;
+    }
+
+    .zasto_mi_naslov {
+        margin-top: 25px;
+        padding-right: 50px;
+    }
+
+    .zasto_mi {
+        padding: 25px;
+    }
+
+    .novosti {
+        align-items: center;
+    }
+
+    .novost {
+        padding-top: 40px;
+    }
+
+    #ref {
+        height: auto;
+    }
+
+    .nove_reference {
+        margin-bottom: 5px;
+    }
+
+    .forma input[type='text'],
+    .forma input[type='email'],
+    .forma textarea {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .novosti {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .novost {
+        padding-top: 40px;
+    }
+
+    #ref {
+        height: auto;
+    }
+
+    .nove_reference {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1700px) {
+    #ref {
+        height: auto;
+    }
+
+    .nove_reference {
+        margin-bottom: 5px;
+    }
+}
