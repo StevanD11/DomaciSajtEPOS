@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.floating-social-share.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.floating-social-share.min.js"></script>
 </head>
 
 <body>
@@ -100,5 +103,16 @@
         <p>Smart Start - Copyright&copy;2020</p>
     </footer>
 </body>
+
+<script>
+    $("body").floatingSocialShare({
+        buttons: [
+            "facebook", "linkedin",
+            "telegram", "twitter",
+        ],
+        text: "share with: ",
+        url: ""
+    });
+</script>
 
 </html>
